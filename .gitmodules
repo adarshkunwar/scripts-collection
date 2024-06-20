@@ -1,0 +1,3 @@
+[submodule "priority-cli"]
+	path = priority-cli
+	url = git@github.com:adarshkunwar/priority-cli.git
