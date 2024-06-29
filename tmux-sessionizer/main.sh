@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-selected=$(find ~/codes/ ~/.config/ -mindepth 1 -type d -and -not -path '*/node_modules/*' | fzf --preview 'eza --tree --level=2 {}')
+selected=$(find ~/codes/ ~/.config/ -mindepth 1 -maxdepth 3 -type d -and -not -path '*/node_modules/*' | fzf --preview 'eza --tree --level=2 {}')
 
 if [[ -z $selected ]]; then
   exit 1
